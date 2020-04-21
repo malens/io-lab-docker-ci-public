@@ -51,7 +51,7 @@ image:
 		--build-arg SCHEMA_BUILD_DATE="$(SCHEMA_BUILD_DATE)" \
 		--build-arg SCHEMA_BUILD_VERSION="$(SCHEMA_BUILD_VERSION)" \
 		--build-arg SCHEMA_CMD="$(SCHEMA_CMD)" \
-		-t $(SCHEMA_NAME):mytag . 
+		-t $(SCHEMA_NAME):$(TAG) . 
 	
 push: image 
 	docker push $(SCHEMA_NAME):latest 

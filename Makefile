@@ -55,7 +55,7 @@ image:
 	
 push: image 
 	docker push $(SCHEMA_NAME):latest 
-	docker push $(SCHEMA_NAME):mytag
+	docker push $(SCHEMA_NAME):$(TAG)
 
 clean:
 
